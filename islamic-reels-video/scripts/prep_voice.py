@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Готовит озвучку: лёгкая чистка, ускорение без искажений (rubberband, тембр сохраняется),
+"""EN: Prepares the voiceover: light cleanup, distortion-free speed-up (rubberband), shortening long pauses, loudness ≈ −16 LUFS.
+RU: Готовит озвучку: лёгкая чистка, ускорение без искажений (rubberband, тембр сохраняется),
 укорачивание слишком длинных пауз, громкость ≈ −16 LUFS с мягким лимитером.
 python3 prep_voice.py <in> <out.wav> [--tempo 1.02] [--max-pause 0.45] [--keep 30.6:0.6,112.4:0.85]
   [--lufs -16] [--denoise] [--no-trim]

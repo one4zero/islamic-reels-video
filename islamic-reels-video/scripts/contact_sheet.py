@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Склейка кадров в лист для показа (скриншоты для согласования).
+"""EN: Builds a contact sheet of frames for review; --safe draws the Reels interface zones.
+RU: Склейка кадров в лист для показа (скриншоты для согласования).
 python3 contact_sheet.py <dir_with_jpeg> <out.jpg> [--cols 4] [--scale 0.6] [--safe]
 --safe: нарисовать зоны интерфейса Reels (красным) и рамку безопасной зоны."""
 import argparse, glob, os

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Разбор лога probe.mjs: текст вне безопасной зоны Reels, лишние переносы строк, наложения надписей.
+"""EN: Parses the probe.mjs log: text outside the Reels safe zone, extra line wraps, overlapping text.
+RU: Разбор лога probe.mjs: текст вне безопасной зоны Reels, лишние переносы строк, наложения надписей.
 python3 check_safe.py <log.txt> [--top 250] [--bottom 1480] [--left 100] [--right 950]
 Зона по умолчанию для 1080×1920: сверху шапка Reels (250), снизу ник/подпись/аудио (последние 440 px),
 справа колонка кнопок (130 px). Наложения, которые длятся 1 кадр, — это просто смена титров (норма)."""

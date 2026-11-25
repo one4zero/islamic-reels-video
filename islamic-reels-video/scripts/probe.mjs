@@ -1,3 +1,4 @@
+// EN: safe-zone probe — renders every step-th frame in probe mode and collects SafeProbe logs.
 // Проверка безопасной зоны: рендерит каждый step-й кадр в режиме probe и собирает логи SafeProbe.
 // node probe.mjs <project_dir> <out_log.txt> <from> <to> <step>
 // Потом: python3 check_safe.py <out_log.txt>

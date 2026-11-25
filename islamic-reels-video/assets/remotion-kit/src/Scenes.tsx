@@ -6,7 +6,11 @@ import { Cap, Kicker, Quote } from "./type";
 import { C, CamKey, clamp, Scrim, Shot } from "./ui";
 
 /**
- * ШАБЛОН монтажа. Порядок работы:
+ * EN: EDIT TEMPLATE. 1) T — scene boundaries (after alignment use W(para, "word") / WE(...) instead of s(sec));
+ *     2) shots — scene backgrounds (picture with camera or graphics) + transition; 3) Overlays — captions (Cap),
+ *     ayah/hadith quotes (Quote), calligraphy, infographics. Full example: assets/examples/rolik4-Scenes.tsx.
+ *
+ * RU: ШАБЛОН монтажа. Порядок работы:
  * 1) T — границы сцен. После выравнивания текста по голосу используйте W(абзац, "слово") / WE(...) из timing.ts
  *    вместо s(секунды): так всё привязано к озвучке.
  * 2) shots — фоны сцен: картинка с камерой (Shot) или графический фон (CineBg, EmBg, свой компонент) + переход trans.
@@ -73,9 +77,9 @@ export const AllScenes: React.FC<{ fr: number }> = ({ fr }) => {
 const Overlays: React.FC<{ fr: number }> = ({ fr }) => (
   <>
     <Calligraphy fr={fr} at={4} until={T.quote} y={420} text="بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ" size={80} />
-    <Kicker fr={fr} at={20} until={T.quote} y={640} text="ПРИМЕР ПОДПИСИ" />
+    <Kicker fr={fr} at={20} until={T.quote} y={640} text="ПОДПИСЬ · LABEL" />
     {/* Титр: слова проявляются по озвучке (нужен words.json). *слово* — золото, | — перенос строки. */}
-    <Cap fr={fr} at={s(1)} until={T.quote} y={760} text="Пример титра | *капсом*" />
+    <Cap fr={fr} at={s(1)} until={T.quote} y={760} text="Example caption | *in caps*" />
     <Quote fr={fr} at={T.quote + 4} until={TOTAL} y={300} label="СУРА АЛЬ-ФАТИХА · 1:1" arabic="بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ" text="«Во имя Аллаха, | Милостивого, Милосердного»" />
   </>
 );

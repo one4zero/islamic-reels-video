@@ -1,3 +1,4 @@
+// EN: renders selected frames for review (screenshots before the final render).
 // Рендер отдельных кадров для просмотра (скриншоты перед рендером).
 // node stills.mjs <project_dir> <out_dir> [--scale 0.6] <кадр> <кадр> ...
 import { createRequire } from "module";

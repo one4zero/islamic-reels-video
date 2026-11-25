@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Скачивает шрифты набора из Google Fonts в public/fonts (все — SIL Open Font License):
+"""EN: Downloads the kit fonts (Montserrat, Lora, Amiri — SIL OFL) from Google Fonts into public/fonts.
+RU: Скачивает шрифты набора из Google Fonts в public/fonts (все — SIL Open Font License):
 Montserrat (variable 100–900), Lora (400–700 и italic 600), Amiri Bold (арабский).
 python3 get_fonts.py <project>/public/fonts
 Нужен curl (работает через системный прокси)."""

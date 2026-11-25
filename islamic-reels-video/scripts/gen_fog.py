@@ -1,4 +1,5 @@
-"""Текстура дыма/тумана для эффекта Fog (fx.tsx): мягкий дым/туман (белый с альфой) → public/fx/fog.png.
+"""EN: Generates the fog/smoke texture used by the Fog effect.
+RU: Текстура дыма/тумана для эффекта Fog (fx.tsx): мягкий дым/туман (белый с альфой) → public/fx/fog.png.
 python3 gen_fog.py <out_dir public/fx>"""
 import os, sys
 import numpy as np

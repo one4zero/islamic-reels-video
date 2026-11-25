@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Подготовка картинок для Remotion.
+"""EN: Image prep: 9:16 upscale (bg), alpha crop (cutout), edge cleanup (defringe), black-background logo → alpha (fromblack), round medallion.
+RU: Подготовка картинок для Remotion.
   bg      <src> <out.jpg>            — апскейл Lanczos до 1440×2560 (9:16) + лёгкая резкость (фон с наездами камеры не мылит)
   cutout  <src.png> <out.png>        — вырезка с прозрачностью: обрезка по альфе
   defringe <src.png> <out.png>       — вырезка + чистка цветной каймы по контуру (красной/жёлтой/белой) и сглаживание края

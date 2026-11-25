@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Синтез тихих звуков без музыкальных инструментов (шумы, удары, шорохи) и эмбиента.
+"""EN: Synthesizes quiet, instrument-free sound effects (noise-based) and an optional wind ambience.
+RU: Синтез тихих звуков без музыкальных инструментов (шумы, удары, шорохи) и эмбиента.
 python3 gen_sfx.py <out_dir public/sfx> [--ambient <public/audio/amb_wind.mp3> --duration 155]
 Создаёт: whoosh, riser, thud, tick, pop, lock, boom, roll, crack, leaf, sparkle(shimmer), birds, rain, fire.
 Громкости в ролике держите 0.02–0.12 (эффекты почти неслышные), фон — на 15–18 дБ тише голоса."""

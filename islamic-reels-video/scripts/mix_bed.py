@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Фон-нашид (БЕЗ музыкальных инструментов): зацикливание с перекрёстной склейкой, тихий уровень,
+"""EN: Background nasheed WITHOUT instruments: crossfaded loop, low level, ducking under the voice (≈15 dB below).
+RU: Фон-нашид (БЕЗ музыкальных инструментов): зацикливание с перекрёстной склейкой, тихий уровень,
 автоприглушение под голос (sidechain). Итог ≈ на 15 дБ тише голоса.
 python3 mix_bed.py <nasheed> <voice.wav> <out bed.mp3> --duration 122 [--base-db -13] [--xfade 4]"""
 import argparse, subprocess

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Распознаёт озвучку с таймингами слов (faster-whisper).
+"""EN: Transcribes a voiceover with word timings (faster-whisper). Use --lang en for English.
+RU: Распознаёт озвучку с таймингами слов (faster-whisper).
 python3 transcribe.py <audio(mp3/wav/ogg)> <out_words.json> [--model medium] [--lang ru]
 Печатает сегменты [начало-конец] текст — по ним видно сцены и паузы.
 Зависимости: pip install faster-whisper; ffmpeg в PATH."""

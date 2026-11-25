@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Выравнивает ИСХОДНЫЙ текст сценария по словам Whisper → src/words.json для Remotion.
+"""EN: Aligns the ORIGINAL script text to Whisper word timings → src/words.json (one paragraph per line; ElevenLabs [tags] are stripped).
+RU: Выравнивает ИСХОДНЫЙ текст сценария по словам Whisper → src/words.json для Remotion.
 python3 align.py <whisper_words.json> <script.txt> <out src/words.json>
 script.txt: один абзац на строку (номер строки = para в W(para, "слово")).
 Метки ElevenLabs вида [calm], [whispers] вырезаются автоматически.

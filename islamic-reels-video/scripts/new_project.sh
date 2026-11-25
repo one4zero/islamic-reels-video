@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# EN: new video from the component kit (copies assets/remotion-kit, installs deps, downloads fonts).
 # Новый ролик из набора компонентов: bash new_project.sh <repo_dir> <rolikN>
 # Копирует assets/remotion-kit, ставит зависимости (или берёт node_modules соседнего ролика жёсткими ссылками).
 set -euo pipefail
